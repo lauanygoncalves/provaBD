@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sistema Fatec Franca - 2023</title>
+    <!-- Link para uma fonte externa de folhas de estilos CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Sistema Fatec Franca - 2023</h1>
+    </header>
+    <main>
+      <div class="container">
+        <button @click="goToCadastroAlunos">Cadastro de Alunos</button>
+        <button @click="goToBuscaAlunos">Busca de Alunos</button>
+        <button @click="goToCadastroProfessores">Cadastro de Professores</button>
+        <button @click="goToBuscaProfessores">Busca de Professores</button>
+      </div>
+    </main>
+     <!-- utiliza os arquivos VUE no endereço citado para funcionar o programa -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+  </body>
+</html>
+
+
+<script>
+  new Vue({
+    el: "main",
+    methods: {
+      // Quando clicar, abre a janela de cadastro de alunos
+      goToCadastroAlunos() {
+        window.open("cadastroAlunos.html", "_blank");
+      },
+      // Quando clicar, abre a janela de busca de alunos
+      goToBuscaAlunos() {
+        window.open("buscaAlunos.html", "_blank");
+      },
+      goToCadastroProfessores() {
+        window.open("cadastroProfessores.html", "_blank");
+      },
+      goToBuscaProfessores() {
+      window.open("buscaProfessores.html", "_blank");
+      },
+    },
+  });
+</script>
